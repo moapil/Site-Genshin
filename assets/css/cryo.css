@@ -1,0 +1,200 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.menu1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu1 * {
+  box-sizing: border-box;
+}
+.menu1 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.menu1 a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.menu1 a:before,
+.menu1 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu1 a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: rgb(162, 108, 175);
+}
+.menu1 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.menu1 a:hover:before,
+.menu1 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.menu1 a:hover:after,
+.menu1 .current a:after {
+  max-width: 100%;
+}
+
+
+/* só pra testar*/
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+
+/* .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(50, 38, 53);
+    background-color: rgb(50, 38, 53);
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu-items li{
+    margin-right: 20px;
+    font-size: 1.1rem;
+    
+}
+
+.menu-items a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    opacity: 0.9;
+
+}
+
+.menu-items a:hover{
+    font-size: 1.3rem;
+    color: white;
+    transition: 0.2s;
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.icone:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+main{
+  background-color: rgb(90, 90, 90);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.texto {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+  }
+  
+  h1 {
+    font-size: 4.2rem;
+    animation: flicker 1.5s infinite alternate;     
+  }
+  
+  /* animação */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff,
+        0 0 90px #fff,
+        0 0 100px #fff,
+        0 0 150px #fff;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+  h2 {
+   font-size: 1.8rem;
+  }
+  .container {
+    margin-top: 20vh;
+  }
+  
+  body {
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
+  }  
+  
+  h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+
+/* .titulo{
+    font-size: 10rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+} */
+
