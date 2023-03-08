@@ -7,7 +7,7 @@ body{
     background-color: whitesmoke;
 }
 
-/* botao importado de outro site */
+/* menu importado de outro site */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 .menu1 {
@@ -97,26 +97,67 @@ main{
     height: 100%;
 }
 
+.tracking-in-expand {
+	animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  color: white;
+  text-shadow:0 0 15px #ffffff, 0 0 15px #ffffff;
+  font-size: 4.2rem;
+}
+
+.tracking-in-expand2 {
+	animation: tracking-in-expand2 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  color: white;
+  text-shadow:0 0 15px #ffffff, 0 0 15px #ffffff;
+  font-size: 1.5rem;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand2 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* texto piscando
 .texto {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #fff,
-        0 0 82px #fff,
-        0 0 92px #fff,
-        0 0 102px #fff,
-        0 0 151px #fff;
+        0 0 7px rgb(228, 228, 228),
+        0 0 10px rgb(228, 228, 228),
+        0 0 21px rgb(228, 228, 228),
+        0 0 42px rgb(228, 228, 228),
+        0 0 82px rgb(228, 228, 228),
+        0 0 92px rgb(228, 228, 228),
+        0 0 102px rgb(228, 228, 228),
+        0 0 151px rgb(228, 228, 228);
   }
   
   h1 {
     font-size: 4.2rem;
-    animation: flicker 1.5s infinite alternate;     
+    animation: flicker 1.10s infinite alternate;     
   }
   
   /* titulo que pisca */
-  @keyframes flicker {
+  /* @keyframes flicker {
       
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
   
@@ -135,7 +176,7 @@ main{
     20%, 24%, 55% {        
         text-shadow: none;
     }    
-  }
+  } */ */
 
   /* resto das coisas */
 
