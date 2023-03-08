@@ -7,6 +7,8 @@ body{
     background-color: whitesmoke;
 }
 
+/* botao importado de outro site */
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 .menu1 {
   font-family: 'Raleway', Arial, sans-serif;
@@ -66,7 +68,7 @@ body{
 }
 
 
-/* só pra testar*/
+/* organizar*/
 html {
   height: 100%;
 }
@@ -113,7 +115,7 @@ main{
     animation: flicker 1.5s infinite alternate;     
   }
   
-  /* animação */
+  /* titulo que pisca */
   @keyframes flicker {
       
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -135,6 +137,8 @@ main{
     }    
   }
 
+  /* resto das coisas */
+
   h2 {
    font-size: 1.8rem;
   }
@@ -153,12 +157,4 @@ main{
     text-transform: uppercase;
     font-weight: 400;
   }
-
-
-/* .titulo{
-    font-size: 10rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-} */
 
