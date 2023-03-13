@@ -199,3 +199,13 @@ main{
     font-weight: 400;
   }
 
+.footer{
+  background-color: #212121;
+
+}
+
+.rodape{
+  color: whitesmoke;
+  font-size: 1rem;
+  opacity: 0.5;
+}

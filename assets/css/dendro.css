@@ -198,3 +198,13 @@ main{
    justify-content: space-between;
 } */
 
+.footer{
+  background-color: #212121;
+
+}
+
+.rodape{
+  color: whitesmoke;
+  font-size: 1rem;
+  opacity: 0.5;
+}
